@@ -9,6 +9,7 @@ module lii.autotextprocessor4dataflow {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.logging;
 
 
     exports lii.autotextprocessor4dataflow.controller;
