@@ -12,6 +12,7 @@ public class RegexService {
         return matcher.find();
     }
 
+    // Method to replace all occurrences of a regex pattern in a string with a replacement string
     public String replace(String inputString, String regexPattern, String replacementString){
         Pattern pattern = Pattern.compile(regexPattern);
         Matcher matcher = pattern.matcher(inputString);
