@@ -10,6 +10,9 @@ module lii.autotextprocessor4dataflow {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens lii.autotextprocessor4dataflow to javafx.fxml;
+
+    exports lii.autotextprocessor4dataflow.controller;
+    opens lii.autotextprocessor4dataflow.controller to javafx.fxml;
     exports lii.autotextprocessor4dataflow;
+    opens lii.autotextprocessor4dataflow to javafx.fxml;
 }
