@@ -14,6 +14,7 @@ public class TextProcessor {
     }
 
     // Method to replace text that match the regrex pattern
+
     public String replacePattern(String text, String pattern, String replacement) {
         return regexService.replace(text, pattern, replacement);
     }
