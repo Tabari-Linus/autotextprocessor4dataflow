@@ -17,4 +17,9 @@ public class TextProcessor {
     public String replacePattern(String text, String pattern, String replacement) {
         return regexService.replace(text, pattern, replacement);
     }
+
+    // Method to return all strings in the text string that matches the regrex pattern
+    public String[] extractMatches(String text, String pattern) {
+        return regexService.extractAllMatches(text, pattern);
+    }
 }
