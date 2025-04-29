@@ -1,4 +1,4 @@
-package lii.autotextprocessor4dataflow;
+package lii.autotextprocessor4dataflow.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
