@@ -1,5 +1,6 @@
 package lii.autotextprocessor4dataflow.service;
 
+import java.util.regex.MatchResult;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,6 +19,15 @@ public class RegexService {
         Matcher matcher = pattern.matcher(inputString);
         return matcher.replaceAll(replacementString);
         }
+
+    // Method to extract all matches of a regex pattern from a string and return a string array
+    public String[] extractAllMatches(String text, String regex) {
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(text);
+        return matcher.results()
+                .map(MatchResult::group)
+                .toArray(String[]::new);
+    }
 
 
 }
